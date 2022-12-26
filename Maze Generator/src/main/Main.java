@@ -32,7 +32,7 @@ public class Main implements Runnable{
 	private ArrayList<Cell> stack;
 	
 	public Main(){
-		frame=new JFrame("Maze Generator");
+		frame=new JFrame("Maze Generator ~Designed by Sanidhya");
 		frame.setSize(WIDTH,HEIGHT);
 		frame.setVisible(true);;
 		frame.setResizable(false);
@@ -182,7 +182,7 @@ public class Main implements Runnable{
 			if(walls[3]) g.drawLine(x, y+Main.h, x,y);
 			
 			if(this.visited){
-				g.setColor(new Color(255,0,255,100));
+				g.setColor(new Color(34, 236, 233, 200));
 				g.fillRect(this.x*Main.w, this.y*Main.h, Main.w, Main.h);
 			}
 		}
